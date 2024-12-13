@@ -1,0 +1,28 @@
+runtime: nodejs20
+env: standard
+
+instance_class: F2
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 5
+
+handlers:
+  - url: /.*
+    script: auto
+    
+# runtime: nodejs20 # or nodejs20 if you prefer the latest LTS version
+# instance_class: F2
+
+# env_variables:
+#   FIREBASE_PROJECT_ID: "si-bantu-capstone-bangkit"
+#   FIREBASE_PRIVATE_KEY_ID: "5059aa13bf79aa2dd6d59eb95de0a86578bcc73e"
+#   FIREBASE_PRIVATE_KEY: "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCw6p/In3dTy18J\nbCJJbO0PdoPSWICnjVbn4gF0+9lgkd19sNCWJrM//G7zmD0rCEAYs8JYZbQlkkdS\n7C9JJvX7sfZw8c9uDCdgmUc7wHH6Jz0vDNmMTV7BwpFgwkUw7wgk+azW3HSYLnwM\nWPBN9RfU9LBmGdKaLFsNrzhJVaBrjiL6DJ9P0PJc1Gzy270wZK88a1LAQ5kTC1BY\nIHwEZuvjBzNrZKqg2PDIMD+lCrCew+dkx3LD/AM6aRjDukck7SwefxUPHgl6BEv9\nLBLZMV/bp7LGd0wL56jiUMYn0bWCROq/DMLhecFyS8uqbfergnTVgh258urKkc9j\nieXKwN9NAgMBAAECggEAEe6o5SomFg7CTSSyRv9XpLPDwdGUXNIKkd91Jq6Txozn\nxqKM9KNAk7GabMOCHmIBiTTInrLUXeM5VTI5IBuRtFeXXgm3QkrQv6MEYY3sn56p\nk3gkdusCufYRoUf1FnQsFFS1tw5KcoByX21bvN3PyBdIkq4httyHGth8sTuQ0ps+\n/Wq1ONhhCNkvSlC/T+xiWSGaM4m8ZJGJnV0mQhjTQWrjkGkMUsneGfM60vAfx2Ad\n98QBHEX8SzFgmPcjJI9TzQxs+9HSOebDMw+YUA3/qk6GJDM4uQ4qGE25/uyXKseV\nmD9aLSBIB1AsYw2/6vmfwOPsZ1CTyE0jQ/JTsB+q+wKBgQDXRqxEJAuzwxwJMB8P\n7pVPs1W6OZTacbJuYQcOtaLHRHLqR12aVOWAj+1Z//BMpOrBXgg657XZ1HDAgLUT\ngK4AoGfJwfODeh+jirrCKbkIkKnyfO+r1JNB5Z97HULBTtOUcKhBt1VM0WUyeOR7\nCXbRr7ofgFux9Vi0cxCLHs2a/wKBgQDSYkkJEhTHPX9Sn80TfBqMxzp5+sEd8rju\nVvOsrhLECnXNk7zjgl2GNMe4Qp8u72bvXxiKartOumZW8364Uc2CEorn/jQMAzU3\nom+/FX5GFJnHm3DQf+0luyPn4LP8NX6rbGIpwV9n7t/J7bl+P9SQfqfFRRG8e4x6\nqFJD6R2BswKBgE3sDOrVSU8WLo2812GC8JTaywsPUKwJP5bolA9k+7i5NAdNMbpt\nRG1Wq4lKNQbpIvg/OydnO9HPLcjgTarzhwg/B5JmG+jZSZ5+1r71Lz7Ebl+RjYda\n+Lp/jUyY+NLT3435gU3YOI4HtWOhksJeWJ3px6sjYQ13S1Z11+UjjzStAoGALTso\nTKTwhq14FEF7C7dg1ed3cQYyQsgObl+PYA7ExhUhoqMitx8uEE6Eqd7Y7nRWAxzE\n3+12e8SjgAo1slcUAeUOrDYA5pxB8sYflEuArHx9W2bV6F24lKYZYB71U0IFC8Hv\nkN6cLnIy9uz/Nl9uyeoRE953o7hESZKqrSMPTvUCgYBP/aiAYWgq7lC6AdQ+Jo+W\n8JSxHRlnvJh0cRRMIIbt10diVBzIoX99pwZDfVr57ysKPI8HVT5OUvwwC5FR6A0X\nhuv83RMP7pipABVHCD+4XzDZ/qhsaXLZEixscBTYTR9ZAQcfVy2SqXTxM5JgpTfc\n8yC4MRpPTyzZvbNyo6Uk7Q==\n-----END PRIVATE KEY-----\n"
+#   FIREBASE_CLIENT_EMAIL: "firebase-adminsdk-pbwhv@si-bantu-capstone-bangkit.iam.gserviceaccount.com"
+#   FIREBASE_CLIENT_ID: "117734505420341292660"
+#   DATABASE_URL: "https://si-bantu-capstone-bangkit.firebasestorage.app"
+
+# automatic_scaling:
+#   target_cpu_utilization: 0.65
+#   min_instances: 1
+#   max_instances: 5
