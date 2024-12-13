@@ -11,7 +11,7 @@ For our Capstone Project, we are collaborated with them consist of:
 |          Nama         | Bangkit-ID |       Path       |
 |:---------------------:|:----------:|:----------------:|
 |  Zeka Emo  |  M200B4KX4610  | Machine Learning |
-|  Indra Mauludani Affandi  |  M200B4KY1975  | Machine Learning |
+|  Indra Mauludani Efendi  |  M200B4KY1975  | Machine Learning |
 |   Aditya Putra Effendi    |  M200B4KY0113  |  Machine Learning |
 |  Prabaswara Nasywa Maharani  |  c200b4kx3492  |  Cloud Computing |
 |  Nalendra Faraz Putra Rahadyan  |  C200B4KY3233  |  Cloud Computing |
