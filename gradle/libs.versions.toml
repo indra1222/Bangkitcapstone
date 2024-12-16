@@ -1,0 +1,77 @@
+[versions]
+agp = "8.6.1"
+appcompatVersion = "1.6.1"
+converterGson = "2.11.0"
+dotsindicator = "4.3"
+firebaseAuth = "21.3.0"
+firebaseFirestore = "24.7.1"
+glideVersion = "4.13.0"
+googleMaterial = "1.4.0"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinxCoroutinesPlayServices = "1.6.4"
+lifecycleRuntimeKtx = "2.6.1"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+googleMaps = "18.1.0"
+googleLocation = "21.0.1"
+glide = "4.12.0"
+materialVersion = "1.10.0"
+okhttp = "4.9.3"
+playServicesAuth = "20.7.0"
+recyclerview = "1.2.1"
+retrofit = "2.9.0"
+gson = "2.9.0"
+retrofitVersion = "2.11.0"
+viewpager2 = "1.0.0"
+
+[libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+circleimageview = { group = "de.hdodenhof", name = "circleimageview", version = "3.1.0" }
+converter-gson-v2110 = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
+glide-v4130 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+kotlin-parcelize-runtime = { group = "org.jetbrains.kotlin", name = "kotlin-parcelize-runtime", version.ref = "kotlin" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesPlayServices" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServices" }
+material-v1100 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+material-v140 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+gson-core = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Google Maps
+google-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "googleMaps" }
+google-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "googleLocation" }
+
+# Image Loading
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+# RecyclerView
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+retrofit-v2110 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+

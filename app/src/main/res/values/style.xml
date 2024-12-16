@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Transparent Title Style for Collapsing Toolbar -->
+    <style name="TransparentTitle">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Collapsed Title Style for Toolbar -->
+    <style name="CollapsedTitle">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Rounded Search Background -->
+    <style name="RoundedSearchBackground" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/rounded_search_background</item>
+        <item name="queryBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+</resources>

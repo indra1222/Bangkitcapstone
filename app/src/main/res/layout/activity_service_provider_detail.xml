@@ -1,0 +1,195 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Provider Image with Gradient Overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/img_provider_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_background"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_back"
+                app:iconTint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_margin="16dp"
+                app:icon="@drawable/ic_arrow_back"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                />
+        </FrameLayout>
+
+        <!-- Content Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:background="#F7F8F9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Provider Name -->
+                <TextView
+                    android:id="@+id/tv_provider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <!-- Provider Type with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_service"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_provider_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Layanan"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_text"/>
+                </LinearLayout>
+
+                <!-- Address with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_provider_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Lengkap"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_text"/>
+                </LinearLayout>
+
+                <!-- Rating -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <RatingBar
+                        android:id="@+id/rb_provider_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:rating="4.5"
+                        android:stepSize="0.5"/>
+
+                    <TextView
+                        android:id="@+id/rb_provider_rating_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" (4.5)"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/secondary_text"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Bio Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F7F8F9"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Me"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Bio -->
+                <TextView
+                    android:id="@+id/tv_provider_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi lengkap tentang layanan dan keahlian"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- WhatsApp Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_contact_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect Via WhatsApp"
+            android:layout_margin="16dp"
+            app:icon="@drawable/ic_whatsapp"
+            android:backgroundTint="#0288d1"
+            app:cornerRadius="16dp"
+            android:padding="16dp"
+            app:iconGravity="textStart"/>
+    </LinearLayout>
+</ScrollView>
