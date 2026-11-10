@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/newsApp_logo.png" alt="newsApp Logo" width="120"/>
+  <img src="./app/src/main/res/drawable/app_logo.png" alt="newsApp Logo" width="300"/>
 </p>
 
 # Bangkit 2024 Capstone Team : Si-Bantu (C242-PS026)
@@ -18,22 +18,47 @@ For our Capstone Project, we are collaborated with them consist of:
 |    Dzikri Razzan Athallah      |  a200b4ky1223  |      Mobile Development     |
 |    Togar Anthony Mario Sianturi      |  A2242180  |      Mobile Development     |
 
+
 ## Our Objectives
+
 We are
 
-<img src="" alt="App Documentation" width="250" height="550">&nbsp; &nbsp;
-
+<p align="center">
+  <img src="./assets/SiBantu_AppDoc.jpg" alt="App Documentation" width="700" height="550">
+</p>
 
 ## Tech Stacks
 
-![stack]("link gambar")
+<p align="center">
+  <img src="./assets/SIBantu_TechStack.jpg" alt="Tech Stack" width="250" height="550">
+</p>
 
 ## Our Model Performance
-SI-BANTU has been trained on over 10.000 reviews and got 85% accuracy on test data
 
-![Capture1]()
+SI-BANTU was trained on over **10,000 reviews** and achieved **85% accuracy** on the test dataset.
 
-![Capture2]()
+### Model Evaluation Metrics
+
+The model's performance is evaluated using the following metrics:
+
+- **Loss:** Measures the difference between the model's predicted outputs and the actual values. Lower loss indicates better model performance.
+- **MAE (Mean Absolute Error):** Measures the average absolute difference between predicted and actual values. Lower MAE indicates more accurate predictions.
+
+### Training Loss
+
+The loss curve illustrates how the model's prediction error changes throughout the training process, providing insights into its learning progress and convergence.
+
+<p align="center">
+  <img src="./assets/SiBantu_model loss.png" alt="Model Training Loss" width="500">
+</p>
+
+### Mean Absolute Error (MAE)
+
+The MAE curve shows how the average absolute prediction error changes during training, helping evaluate the model's prediction accuracy.
+
+<p align="center">
+  <img src="./assets/SiBantu_MAE.png" alt="Model Mean Absolute Error (MAE)" width="500">
+</p>
 
 ## Instalation
 Make sure you intalled all this dependencies first on your local machine. You can use conda virtual env for making things easier with pip
@@ -70,7 +95,7 @@ You can also test our API [Here](https://aplodfix-wk452lxpxq-et.a.run.app/predic
 6. [Material Design](https://material.io/develop/android)
 
 ## Fork Repository
-In order to duplicate our repository to become your repository on your own github account, you need to **fork** this repository
+In order to duplicate our repository to become your repository on your own github account, you need to **fork** this repository </br>
 ![image](https://user-images.githubusercontent.com/85149518/120605441-405eb400-c478-11eb-9304-4dcd1fa61a71.png) </br>
 Forking repository allows you to modificate this project without affecting the original project.
 
@@ -78,7 +103,6 @@ Forking repository allows you to modificate this project without affecting the o
 Download code from branch "main" **OR** 
 2. Clone Repository. Click on dropdown Code and **copy** HTTPS link
 2. Clone Repository. Click on dropdown Code and **copy** HTTPS link <br/>
-![Image Copy HTTPS](https://camo.githubusercontent.com/1c0cf8056422ff414eee75142b213c5970e085c2e33c0a6d69dc2639d98216f1/68747470733a2f2f6669727374636f6e747269627574696f6e732e6769746875622e696f2f6173736574732f526561646d652f636f70792d746f2d636c6970626f6172642e706e67)
 ```
 git clone https://github.com/aplawtech/aplod.git
 ```
